@@ -19,10 +19,92 @@ $font-family: 'Manrope',
 sans-serif;
 //Weights: 500, 700
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
+    font-family: $font-family;
+    font-size: 13px;
+    color: $Desaturated-Dark-Blue;
+    
     background-color: $Light-Grayish-Blue;
+    padding-top: 150px;
     
     section {
+        height: 330px;
+        width: 730px;
+        background-color: #fff;
+        margin: auto;
+        box-shadow:  5px 5px 10px $Grayish-Blue, 15px 15px 50px $Grayish-Blue;
+        border-radius: 10px;
         
+        .left {
+            float: left;
+            width: 40%;
+            height: 100%;
+            
+            background-image: url("./images/drawers.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: left;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        
+        .right {
+            float: right;
+            width: 60%;
+            height: 100%;
+            padding: 40px;
+            
+            div:first-of-type {
+                h1 {
+                    font-weight: 700;
+                    color: $Very-Dark-Grayish-Blue;
+                }
+                
+                p {
+                    margin-top: 20px;
+                }
+            }
+            
+            div:last-of-type {
+                margin-top: 20px;
+                overflow: hidden;
+                
+                img:first-of-type {
+                    float: left;
+                    height: 75px;
+                    border-radius: 100%;
+                }
+                
+                div {
+                    float: left;
+                    margin-left: 20px;
+                    
+                    h3 {
+                        font-weight: 700;
+                        color: $Very-Dark-Grayish-Blue;
+                    }
+                    
+                    p {
+                        margin-top: 0;
+                    }
+                }
+                
+                img:last-of-type {
+                    float: right;
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 100%;
+                    background-color: $Light-Grayish-Blue;
+                    padding: 10px;
+                    margin-top: 25px;
+                }
+            }
+        }
     }
 }
