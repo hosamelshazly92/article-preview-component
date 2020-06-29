@@ -73,4 +73,47 @@ body section .right div:last-of-type img:last-of-type {
   margin-top: 25px;
 }
 
+@media (max-width: 750px) {
+  body {
+    padding: 50px;
+  }
+  body section {
+    width: 335px;
+    height: auto;
+  }
+  body section .left {
+    float: none;
+    width: 100%;
+    height: 200px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+  }
+  body section .right {
+    float: none;
+    width: 100%;
+    padding: 50px 40px;
+  }
+  body section .right div:first-of-type h1 {
+    font-size: 1rem;
+  }
+  body section .right div:first-of-type p {
+    font-size: 0.8rem;
+  }
+  body section .right div:last-of-type img:first-of-type {
+    height: 50px;
+  }
+  body section .right div:last-of-type div {
+    margin-top: 10px;
+  }
+  body section .right div:last-of-type div h3 {
+    font-size: 0.8rem;
+  }
+  body section .right div:last-of-type div p {
+    font-size: 0.8rem;
+  }
+  body section .right div:last-of-type img:last-of-type {
+    margin-top: 10px;
+  }
+}
+
 /*# sourceMappingURL=compiled.css.map */
