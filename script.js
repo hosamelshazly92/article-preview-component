@@ -20,5 +20,4 @@ share.addEventListener("mouseout", function () {
     
     //mobile design
     show.style.display = "none";
-    hide.style.display = "block";
 });
