@@ -29,23 +29,23 @@ body {
     font-family: $font-family;
     font-size: 13px;
     color: $Desaturated-Dark-Blue;
-    
+
     background-color: $Light-Grayish-Blue;
     padding-top: 150px;
-    
+
     section {
         height: 330px;
-        width: 730px;
+        width: 720px;
         background-color: #fff;
         margin: auto;
-        box-shadow:  5px 5px 10px $Grayish-Blue, 15px 15px 50px $Grayish-Blue;
+        box-shadow: 5px 5px 10px $Grayish-Blue, 15px 15px 50px $Grayish-Blue;
         border-radius: 10px;
-        
+
         .left {
             float: left;
             width: 40%;
             height: 100%;
-            
+
             background-image: url("./images/drawers.jpg");
             background-repeat: no-repeat;
             background-size: cover;
@@ -53,48 +53,52 @@ body {
             border-top-left-radius: 10px;
             border-bottom-left-radius: 10px;
         }
-        
+
         .right {
             float: right;
             width: 60%;
             height: 100%;
-            padding: 40px;
-            
-            div:first-of-type {
+            padding: 0px;
+
+            .section-1 {
+                padding: 40px 40px 0 40px;
+
                 h1 {
                     font-weight: 700;
                     color: $Very-Dark-Grayish-Blue;
                 }
-                
+
                 p {
                     margin-top: 20px;
                 }
             }
-            
-            div:last-of-type {
+
+            .section-2 {
                 margin-top: 20px;
                 overflow: hidden;
-                
+
                 img:first-of-type {
                     float: left;
                     height: 75px;
                     border-radius: 100%;
+                    margin-left: 40px;
                 }
-                
+
                 div {
                     float: left;
+                    margin-top: 20px;
                     margin-left: 20px;
-                    
+
                     h3 {
                         font-weight: 700;
                         color: $Very-Dark-Grayish-Blue;
                     }
-                    
+
                     p {
                         margin-top: 0;
                     }
                 }
-                
+
                 img:last-of-type {
                     float: right;
                     width: 35px;
@@ -103,7 +107,75 @@ body {
                     background-color: $Light-Grayish-Blue;
                     padding: 10px;
                     margin-top: 25px;
+                    margin-right: 40px;
+
+                    &:hover {
+                        color: $Light-Grayish-Blue;
+                        background-color: $Very-Dark-Grayish-Blue;
+                    }
                 }
+            }
+
+            .section-3 {
+                visibility: hidden;
+
+                .label {
+                    margin: 0;
+                    padding: 20px 20px;
+                    background-color: $Very-Dark-Grayish-Blue;
+                    border-radius: 5px;
+                    width: 220px;
+                    height: 60px;
+                    text-align: center;
+
+                    position: relative;
+                    top: -140px;
+                    left: 265px;
+
+                    p {
+                        color: $Grayish-Blue;
+                        font-size: 1rem;
+                        font-weight: 300;
+                        margin: 0;
+                        margin-right: 10px;
+                        display: inline;
+                    }
+
+                    img {
+                        width: 15px;
+                        height: 15px;
+                        margin: 0;
+                        margin-left: 10px;
+                        padding: 0;
+                        background-color: $Very-Dark-Grayish-Blue;
+                    }
+                }
+
+                .arrow-left {
+                    border-right: 10px solid $Very-Dark-Grayish-Blue;
+                    border-bottom: 10px solid transparent;
+                    margin: 0;
+                    display: inline-block;
+
+                    position: relative;
+                    top: -144px;
+                    left: 363px;
+                }
+
+                .arrow-right {
+                    border-left: 10px solid $Very-Dark-Grayish-Blue;
+                    border-bottom: 10px solid transparent;
+                    margin: 0;
+                    display: inline-block;
+
+                    position: relative;
+                    top: -144px;
+                    left: 360px;
+                }
+            }
+            
+            .section-4 {
+                display: none;
             }
         }
     }
@@ -112,11 +184,11 @@ body {
 @media (max-width: 750px) {
     body {
         padding: 50px;
-        
+
         section {
             width: 335px;
             height: auto;
-            
+
             .left {
                 float: none;
                 width: 100%;
@@ -124,45 +196,97 @@ body {
                 border-bottom-left-radius: 0;
                 border-top-right-radius: 10px;
             }
-            
+
             .right {
                 float: none;
                 width: 100%;
-                padding: 50px 40px;
-                
-                div:first-of-type {
+
+                .section-1 {
                     h1 {
                         font-size: 1rem;
                     }
-                    
+
                     p {
                         font-size: 0.8rem;
                     }
                 }
-                
-                div:last-of-type {
+
+                .section-2 {
+                    padding: 20px 0;
+
                     img:first-of-type {
                         height: 50px;
                     }
-                    
+
                     div {
-                        margin-top: 10px;
-                        
+                        margin-top: 8px;
+
                         h3 {
                             font-size: 0.8rem;
                         }
-                        
+
                         p {
                             font-size: 0.8rem;
                         }
                     }
-                    
+
                     img:last-of-type {
-                        margin-top: 10px;
+                        margin-top: 8px;
+                    }
+                }
+
+                .section-3 {
+                    display: none;
+                }
+
+                .section-4 {
+                    display: none;
+                    heigth: 50px;
+                    margin-top: 20px;
+                    padding: 20px 0;
+                    background-color: $Very-Dark-Grayish-Blue;
+                    border-bottom-right-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                    overflow: hidden;
+
+                    p {
+                        float: left;
+                        font-size: 1rem;
+                        font-weight: 700;
+                        line-height: 50px;
+                        margin-left: 40px;
+                    }
+
+                    img:first-of-type,
+                    img:nth-of-type(2),
+                    img:nth-of-type(3) {
+                        width: 20px;
+                        height: 20px;
+                        margin: 0;
+                        margin-top: 15px;
+                        margin-left: 10px;
+                        padding: 0;
+                        background-color: $Very-Dark-Grayish-Blue;
+                        float: left;
+                    }
+
+                    img {
+                        float: right;
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 100%;
+                        background-color: $Light-Grayish-Blue;
+                        padding: 10px;
+                        margin-top: 8px;
+                        margin-right: 40px;
+
+                        &:hover {
+                            color: $Light-Grayish-Blue;
+                            background-color: $Very-Dark-Grayish-Blue;
+                        }
                     }
                 }
             }
         }
     }
 }
-

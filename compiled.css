@@ -13,7 +13,7 @@ body {
 }
 body section {
   height: 330px;
-  width: 730px;
+  width: 720px;
   background-color: #fff;
   margin: auto;
   box-shadow: 5px 5px 10px #9eafc2, 15px 15px 50px #9eafc2;
@@ -34,36 +34,41 @@ body section .right {
   float: right;
   width: 60%;
   height: 100%;
-  padding: 40px;
+  padding: 0px;
 }
-body section .right div:first-of-type h1 {
+body section .right .section-1 {
+  padding: 40px 40px 0 40px;
+}
+body section .right .section-1 h1 {
   font-weight: 700;
   color: #48556a;
 }
-body section .right div:first-of-type p {
+body section .right .section-1 p {
   margin-top: 20px;
 }
-body section .right div:last-of-type {
+body section .right .section-2 {
   margin-top: 20px;
   overflow: hidden;
 }
-body section .right div:last-of-type img:first-of-type {
+body section .right .section-2 img:first-of-type {
   float: left;
   height: 75px;
   border-radius: 100%;
+  margin-left: 40px;
 }
-body section .right div:last-of-type div {
+body section .right .section-2 div {
   float: left;
+  margin-top: 20px;
   margin-left: 20px;
 }
-body section .right div:last-of-type div h3 {
+body section .right .section-2 div h3 {
   font-weight: 700;
   color: #48556a;
 }
-body section .right div:last-of-type div p {
+body section .right .section-2 div p {
   margin-top: 0;
 }
-body section .right div:last-of-type img:last-of-type {
+body section .right .section-2 img:last-of-type {
   float: right;
   width: 35px;
   height: 35px;
@@ -71,6 +76,63 @@ body section .right div:last-of-type img:last-of-type {
   background-color: #ecf2f8;
   padding: 10px;
   margin-top: 25px;
+  margin-right: 40px;
+}
+body section .right .section-2 img:last-of-type:hover {
+  color: #ecf2f8;
+  background-color: #48556a;
+}
+body section .right .section-3 {
+  visibility: hidden;
+}
+body section .right .section-3 .label {
+  margin: 0;
+  padding: 20px 20px;
+  background-color: #48556a;
+  border-radius: 5px;
+  width: 220px;
+  height: 60px;
+  text-align: center;
+  position: relative;
+  top: -140px;
+  left: 265px;
+}
+body section .right .section-3 .label p {
+  color: #9eafc2;
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0;
+  margin-right: 10px;
+  display: inline;
+}
+body section .right .section-3 .label img {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  margin-left: 10px;
+  padding: 0;
+  background-color: #48556a;
+}
+body section .right .section-3 .arrow-left {
+  border-right: 10px solid #48556a;
+  border-bottom: 10px solid transparent;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  top: -144px;
+  left: 363px;
+}
+body section .right .section-3 .arrow-right {
+  border-left: 10px solid #48556a;
+  border-bottom: 10px solid transparent;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  top: -144px;
+  left: 360px;
+}
+body section .right .section-4 {
+  display: none;
 }
 
 @media (max-width: 750px) {
@@ -91,28 +153,76 @@ body section .right div:last-of-type img:last-of-type {
   body section .right {
     float: none;
     width: 100%;
-    padding: 50px 40px;
   }
-  body section .right div:first-of-type h1 {
+  body section .right .section-1 h1 {
     font-size: 1rem;
   }
-  body section .right div:first-of-type p {
+  body section .right .section-1 p {
     font-size: 0.8rem;
   }
-  body section .right div:last-of-type img:first-of-type {
+  body section .right .section-2 {
+    padding: 20px 0;
+  }
+  body section .right .section-2 img:first-of-type {
     height: 50px;
   }
-  body section .right div:last-of-type div {
-    margin-top: 10px;
+  body section .right .section-2 div {
+    margin-top: 8px;
   }
-  body section .right div:last-of-type div h3 {
+  body section .right .section-2 div h3 {
     font-size: 0.8rem;
   }
-  body section .right div:last-of-type div p {
+  body section .right .section-2 div p {
     font-size: 0.8rem;
   }
-  body section .right div:last-of-type img:last-of-type {
-    margin-top: 10px;
+  body section .right .section-2 img:last-of-type {
+    margin-top: 8px;
+  }
+  body section .right .section-3 {
+    display: none;
+  }
+  body section .right .section-4 {
+    display: none;
+    heigth: 50px;
+    margin-top: 20px;
+    padding: 20px 0;
+    background-color: #48556a;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+  }
+  body section .right .section-4 p {
+    float: left;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 50px;
+    margin-left: 40px;
+  }
+  body section .right .section-4 img:first-of-type,
+body section .right .section-4 img:nth-of-type(2),
+body section .right .section-4 img:nth-of-type(3) {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    margin-top: 15px;
+    margin-left: 10px;
+    padding: 0;
+    background-color: #48556a;
+    float: left;
+  }
+  body section .right .section-4 img {
+    float: right;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background-color: #ecf2f8;
+    padding: 10px;
+    margin-top: 8px;
+    margin-right: 40px;
+  }
+  body section .right .section-4 img:hover {
+    color: #ecf2f8;
+    background-color: #48556a;
   }
 }
 
